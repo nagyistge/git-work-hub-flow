@@ -1,5 +1,12 @@
-electron-boilerplate-vue
+
+
+Git Work Hub Flow
 ==============
+
+
+
+The following part of the README was forked from electron-boilerplate-vue:
+
 Comprehensive boilerplate application for [Electron runtime](http://electron.atom.io) and [Vue.js](http://vuejs.org). This project is based on [vue-templates/webpack](https://github.com/vuejs-templates/webpack) and the awesome work by @szwacz on [electron-boilerplate](https://github.com/szwacz/electron-boilerplate).
 
 **This README is a work in progress.** This version is a large departure from the previous iteration. If you're looking for the old version, see [this branch](https://github.com/bradstewart/electron-boilerplate-vue/tree/legacy).
@@ -13,7 +20,7 @@ Scope of this project:
 - Test scripts for both unit and end-to-end testing.
 - Generate ready for distribution installers of your app for all supported operating systems.
 
-Note: Installer generation is currently NOT implemented. Once electron-builder stablizes, I will add that to the project. 
+Note: Installer generation is currently NOT implemented. Once electron-builder stablizes, I will add that to the project.
 
 
 # Quick start
@@ -90,7 +97,7 @@ To make ready for distribution installer use command:
 ```
 npm run release
 ```
-This process uses [electron-packager](https://github.com/electron-userland/electron-packager). See their documentation on packaging for various operating systems. 
+This process uses [electron-packager](https://github.com/electron-userland/electron-packager). See their documentation on packaging for various operating systems.
 
 
 # License
