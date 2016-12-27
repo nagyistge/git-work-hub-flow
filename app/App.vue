@@ -2,6 +2,7 @@
   <div id="app">
     <!-- <img class="logo" src="./assets/logo.png"> -->
     <hello></hello>
+    <reviews-requested></reviews-requested>
     <!-- <stuff></stuff> -->
   </div>
 </template>
@@ -9,10 +10,12 @@
 <script>
   import Hello from './components/Hello'
   import Stuff from './components/Stuff'
+  import ReviewsRequested from './components/ReviewsRequested'
   export default {
     components: {
       Hello,
-      Stuff
+      Stuff,
+      ReviewsRequested
     }
   }
 </script>
