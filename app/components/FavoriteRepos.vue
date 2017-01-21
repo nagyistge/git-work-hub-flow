@@ -12,14 +12,12 @@
     export default {
         data () {
             return {
-                title: 'Requested Reviews'
+                title: 'Favorite Repos'
             };
         },
-        methods () {
-            return {
-                getData () {
-                }
-            };
+        methods: {
+            getUserData () {
+            }
         }
     };
 </script>

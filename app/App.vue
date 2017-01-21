@@ -1,19 +1,25 @@
 <template>
-    <div id="app">
-        <div data-icon="ei-spinner-2" data-size="l" ></div>
-        <hello></hello>
-        <reviews-requested></reviews-requested>
-        <your-repositories></your-repositories>
+    <div id="app" class="window">
+        <div class="window-content">
+            <div class="pane-group">
+                <side-bar></side-bar>
+                <your-repositories></your-repositories>
+                <favorite-repos></favorite-repos>
+                <reviews-requested></reviews-requested>
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
-    import Hello from './components/Hello';
+    import FavoriteRepos from './components/FavoriteRepos';
+    import SideBar from './components/SideBar';
     import ReviewsRequested from './components/ReviewsRequested';
     import YourRepositories from './components/YourRepositories';
     export default {
         components: {
-            Hello,
+            SideBar,
+            FavoriteRepos,
             ReviewsRequested,
             YourRepositories
         }
@@ -21,23 +27,13 @@
 </script>
 
 <style>
-  html {
-    height: 100%;
-  }
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-  #app {
-    margin-top: -100px;
-    max-width: 600px;
-    font-family: Helvetica, sans-serif;
-    text-align: center;
-  }
-  .logo {
-    width: 100px;
-    height: 100px
-  }
+    .pane .list-group {
+        margin-top: 55px;
+    }
+    .pane .list-group .list-group-header {
+        position: fixed;
+        /*width: 100%;*/
+        background-color: white;
+        top: 0;
+    }
 </style>

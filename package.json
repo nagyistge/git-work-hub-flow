@@ -78,6 +78,7 @@
     "webpack-merge": "^0.8.3"
   },
   "dependencies": {
-    "github-api": "^3.0.0"
+    "github-api": "^3.0.0",
+    "photon": "^2.0.0"
   }
 }
