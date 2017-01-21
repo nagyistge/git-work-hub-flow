@@ -1,16 +1,14 @@
 <template>
     <div class="hello">
         <h1>{{ msg }}</h1>
-        <span> from {{ appName }} running on {{ platform }} </span>
-
-        <h2>This will be the app where you can see requested reviews and so on...</h2>
+        <button v-on:click="getPatrickData()">Get Patrick Data</button>
     </div>
 </template>
 
 <script>
     import { remote } from 'electron';
     import os from 'os';
-
+    import GitHub from 'github-api';
     export default {
         data () {
             return {
@@ -22,6 +20,16 @@
                 // its initial state.
                 msg: 'GitWorkHubFlow'
             };
+        },
+        methods: {
+            getPatrickData () {
+                const gh = new GitHub();
+                const pdsullivan = gh.getUser('pdsullivan');
+                pdsullivan.getProfile()
+                    .then(({data: userData}) => {
+                        this.msg = `Hello ${userData.name}!`;
+                    });
+            }
         }
     };
 </script>

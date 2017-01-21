@@ -3,19 +3,19 @@
         <div data-icon="ei-spinner-2" data-size="l" ></div>
         <hello></hello>
         <reviews-requested></reviews-requested>
-        <stuff></stuff>
+        <your-repositories></your-repositories>
     </div>
 </template>
 
 <script>
     import Hello from './components/Hello';
-    import Stuff from './components/Stuff';
     import ReviewsRequested from './components/ReviewsRequested';
+    import YourRepositories from './components/YourRepositories';
     export default {
         components: {
             Hello,
-            Stuff,
-            ReviewsRequested
+            ReviewsRequested,
+            YourRepositories
         }
     };
 </script>
